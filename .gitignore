@@ -1,0 +1,5 @@
+boot.o
+kernel.o
+MyOS.iso
+MyOS.bin
+isodir/
