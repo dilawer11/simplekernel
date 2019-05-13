@@ -1,5 +1,5 @@
-llvm-as-4.0 boot.s -o boot.o
-wllvm -m32 -c kernel.c -o kernel.o 
+as --32 boot.s -o boot.o
+wllvm -m32 -c kernel.c -o kernel.o
 ld -m elf_i386 -T linker.ld kernel.o boot.o -o MyOS.bin -nostdlib
 grub-file --is-x86-multiboot MyOS.bin 
 
